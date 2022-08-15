@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Back account</title>
+</head>
+  <main>
+    <section class="bg-orange-100 font-bold w-9/12 mx-auto mt-6 p-8 rounded-lg">
+        <h3 class="text-2xl mb-5 text-center">Dear User: Bank Account</h3> 
+    </section>
+  </main>
+  <section>
+    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-5">
+        <div class="bg-green-500 p-8 text-white rounded-lg"> 
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-cyan-500 p-8 text-white rounded-lg"> 
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 class="text-5xl">$ <span id="withdraw-total">00</span> </h2>
+        </div>
+        <div class="bg-emerald-500	 p-8 text-white rounded-lg"> 
+            <h4 class="text-2xl">Total Balance</h4>
+            <h2 class="text-5xl">$ <span id="balance-total" >100</span></h2>
+        </div>
+        
+    </div>
+  </section>
+  <!-- Deposit and Withdraw -->
+  <section>
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-5">
+        <div class="bg-violet-500 p-8 rounded-lg"> 
+            <h4 class="text-2xl text-white">Please Diposit</h4>
+            <input class="w-9/12 block px-3 mb-3 h-10 mt-2 rounded-lg" type="text" name="" id="deposit-field" placeholder="Please inter the deposit Balance">
+            <button id="btn-deposit" class="bg-amber-400 px-8 py-2 text-white rounded-lg mt-2 hover:bg-fuchsia-600 ease-in-out duration-300 font-medium">Deposit Now</button>
+        </div>
+        <div class="bg-indigo-500 p-8 rounded-lg"> 
+            <h4 class="text-2xl text-white">Please Withdraw</h4>
+            <input class="w-9/12 block px-3 mb-3 h-10 mt-2 rounded-lg" type="text" name="" id="withdraw-field" placeholder="Enter your Withdraw Balance">
+            <button id="btn-withdraw" class="bg-amber-400 px-8 py-2 rounded-lg mt-2 hover:bg-sky-600 ease-in-out duration-300 text-white font-medium">Withdraw Now</button>
+        </div>      
+    </div>
+  </section>
+
+
+
+  <script src="js/deposit.js"></script>
+  <script src="js/withdraw.js"></script>
+</body>
+</html>
